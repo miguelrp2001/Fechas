@@ -47,7 +47,7 @@ public class Fechas {
      *     devuelve la fecha actual 
      * 
      */
-    private String Hoy () {
+    public String Hoy () {
         //Instanciamos el objeto Calendar
         //en fecha obtenemos la fecha y hora del sistema
         Calendar fecha = new GregorianCalendar();
@@ -65,3 +65,16 @@ public class Fechas {
            
     }
 }
+
+
+/**
+ * 
+ * Los test son:
+ * 
+ * Prueba 1: Fecha actual, debe devolver 0 (Valores borde).
+ * 
+ * Prueba 2: Fecha futura, debe devolver 1, fuera del rango.
+ * 
+ * Prueba 3: Fecha pasada, debe devolver -1, dentro del rango.
+ * 
+ */
